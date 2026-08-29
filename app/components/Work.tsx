@@ -36,7 +36,7 @@ export default function Work() {
             <div className="flex gap-6 horizontal-track">
               <div className="group w-[400] shrink-0">
                 <a
-                  href="/work/un-paused"
+                  href="/project/un-paused"
                   className="flex h-full flex-col overflow-hidden rounded-3xl border border-border/60 bg-white shadow-soft transition-shadow hover:shadow-lift"
                 >
                   <div
@@ -79,7 +79,7 @@ export default function Work() {
               </div>
               <div className="group w-[400] shrink-0">
                 <a
-                  href="/work/spicey-guava"
+                  href="/project/spicey-guava"
                   className="flex h-full flex-col overflow-hidden rounded-3xl border border-border/60 bg-white shadow-soft transition-shadow hover:shadow-lift"
                 >
                   <div
@@ -123,7 +123,7 @@ export default function Work() {
               </div>
               <div className="group w-[400] shrink-0">
                 <a
-                  href="/work/angry-toast"
+                  href="/project/angry-toast"
                   className="flex h-full flex-col overflow-hidden rounded-3xl border border-border/60 bg-white shadow-soft transition-shadow hover:shadow-lift"
                 >
                   <div

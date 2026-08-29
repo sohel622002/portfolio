@@ -44,7 +44,7 @@ export default function CurrentWork() {
                       style={{ zIndex: "1", transform: "none" }}
                     >
                       <a
-                        href="/work/american-cocktail-week"
+                        href="/project/angry-toast"
                         className="group flex items-center gap-4 rounded-3xl border border-border/60 bg-white p-4 shadow-lift transition-colors sm:gap-6 sm:p-6 hover:bg-(--sunshine-light)"
                       >
                         <div
@@ -101,7 +101,7 @@ export default function CurrentWork() {
                       }}
                     >
                       <a
-                        href="/work/rogue-sailor-rum"
+                        href="/project/rogue-sailor-rum"
                         className="group flex items-center gap-4 rounded-3xl border border-border/60 bg-white p-4 shadow-lift transition-colors sm:gap-6 sm:p-6 hover:bg-[var(--sunshine-soft)]"
                       >
                         <div
@@ -148,7 +148,7 @@ export default function CurrentWork() {
                       }}
                     >
                       <a
-                        href="/work/smoothie-cards"
+                        href="/project/smoothie-cards"
                         className="group flex items-center gap-4 rounded-3xl border border-border/60 bg-white p-4 shadow-lift transition-colors sm:gap-6 sm:p-6 hover:bg-[var(--sunshine-soft)]"
                       >
                         <div
