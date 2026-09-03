@@ -45,14 +45,14 @@ export default function Experience() {
                   <div className="rounded-2xl border border-border/60 bg-white p-5 shadow-soft sm:p-6 reveal-card">
                     <div className="grid grid-cols-[minmax(0,1fr)_auto] items-baseline gap-3">
                       <h3 className="font-display truncate text-lg font-semibold sm:text-xl">
-                        Studio Carbon
+                        Convasys Technology Pvt Ltd
                       </h3>
                       <span className="shrink-0 w-fit rounded-full bg-[var(--sunshine-soft)] px-3 py-1 text-xs font-medium text-foreground/70">
-                        Jan 2026 — Jun 2026
+                        Sept 2024 — Present
                       </span>
                     </div>
                     <p className="mt-1 text-sm font-medium text-foreground/80">
-                      Communication Design Intern
+                      Software Engineer
                     </p>
                     <ul className="mt-3 space-y-2">
                       <li className="flex gap-3 text-sm leading-relaxed text-muted-foreground">
@@ -60,25 +60,12 @@ export default function Experience() {
                           aria-hidden="true"
                           className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--lavender)]"
                         />
-                        <p>
-                          Awarded a place in Studio Carbon's{" "}
-                          <b className="highlight-text">Graduation Project</b>{" "}
-                          Cohort, receiving six months of structured design
-                          mentorship.
-                        </p>
-                      </li>
-                      <li className="flex gap-3 text-sm leading-relaxed text-muted-foreground">
-                        <span
-                          aria-hidden="true"
-                          className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--lavender)]"
-                        />
                         <span>
-                          Conducted design research on menopause in India
-                          through secondary research and semi-structured
-                          interviews with women and medical experts,
-                          synthesising findings into behavioural archetypes and
-                          actionable insights to address systemic and
-                          household-level health literacy gaps.
+                          Developed and maintained{" "}
+                          <b className="highlight-text">Angular</b> web
+                          applications and Ionic-based mobile apps for
+                          Android, iOS, and PWA, supporting the company's core
+                          product across platforms.
                         </span>
                       </li>
                       <li className="flex gap-3 text-sm leading-relaxed text-muted-foreground">
@@ -87,10 +74,23 @@ export default function Experience() {
                           className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--lavender)]"
                         />
                         <span>
-                          Designed un.paused, an accessible publication and
-                          communication ecosystem that promotes menopause
-                          awareness and helps dismantle domestic stigma among
-                          homemakers in India.
+                          Implemented reactive programming patterns using
+                          RxJS to manage complex asynchronous flows and
+                          application state, and integrated RESTful APIs in
+                          close collaboration with backend teams.
+                        </span>
+                      </li>
+                      <li className="flex gap-3 text-sm leading-relaxed text-muted-foreground">
+                        <span
+                          aria-hidden="true"
+                          className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--lavender)]"
+                        />
+                        <span>
+                          Built and maintained company websites using
+                          Next.js with a focus on performance, SEO, and
+                          scalability, while contributing to backend
+                          development (~40% of workload) using NestJS to
+                          build REST APIs and microservices.
                         </span>
                       </li>
                     </ul>
@@ -109,14 +109,14 @@ export default function Experience() {
                   <div className="rounded-2xl border border-border/60 bg-white p-5 shadow-soft sm:p-6 reveal-card">
                     <div className="grid grid-cols-[minmax(0,1fr)_auto] items-baseline gap-3">
                       <h3 className="font-display truncate text-lg font-semibold sm:text-xl">
-                        Spicey Guava
+                        Freelance
                       </h3>
                       <span className="shrink-0 text-xs font-medium text-muted-foreground">
-                        May 2025 — Nov 2025
+                        Oct 2023 — Sept 2024
                       </span>
                     </div>
                     <p className="mt-1 text-sm font-medium text-foreground/80">
-                      Junior Graphic Designer
+                      Frontend / Full-Stack Developer
                     </p>
                     <ul className="mt-3 space-y-2">
                       <li className="flex gap-3 text-sm leading-relaxed text-muted-foreground">
@@ -125,11 +125,11 @@ export default function Experience() {
                           className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--lavender)]"
                         />
                         <span>
-                          Led complete end-to-end branding solutions for a
-                          diverse client portfolio including hospitality (cafés,
-                          restaurants), retail (skincare brand, cloud kitchen,
-                          patisserie), and B2B (creative consultancy, Spicey
-                          Guava), each requiring distinct market identities.
+                          Delivered frontend-focused freelance projects using
+                          React and Next.js, building responsive UIs with
+                          HTML, CSS, SCSS, and JavaScript, and optimizing
+                          client websites for performance, SEO, and
+                          scalability.
                         </span>
                       </li>
                       <li className="flex gap-3 text-sm leading-relaxed text-muted-foreground">
@@ -138,11 +138,9 @@ export default function Experience() {
                           className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--lavender)]"
                         />
                         <span>
-                          Led packaging design for gifting products and dark rum
-                          brands, website design and development, and the
-                          creation of core marketing assets including social
-                          media content, content calendars, menus, and brand
-                          collaterals.
+                          Developed REST APIs using Node.js and Express.js to
+                          support frontend functionality, and designed and
+                          managed databases using PostgreSQL and Prisma ORM.
                         </span>
                       </li>
                       <li className="flex gap-3 text-sm leading-relaxed text-muted-foreground">
@@ -151,10 +149,10 @@ export default function Experience() {
                           className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--lavender)]"
                         />
                         <span>
-                          Delivered cohesive brand systems with creative
-                          distinction, strengthening client market presence and
-                          customer engagement across both digital and print
-                          platforms.
+                          Managed the full project lifecycle — requirement
+                          gathering, development, testing, and client
+                          feedback — for multiple independent clients across
+                          India and Malaysia.
                         </span>
                       </li>
                     </ul>

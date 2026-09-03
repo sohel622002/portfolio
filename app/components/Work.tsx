@@ -1,6 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import HorizontalScrollProvider from "./animation-providers/WorkHorizontalScrollProvider";
+import { projects } from "@/lib/data/projects";
 
 export default function Work() {
   return (
@@ -34,136 +35,57 @@ export default function Work() {
             <div className="horizontal-blur horizontal-blur-right" />
 
             <div className="flex gap-6 horizontal-track">
-              <div className="group w-[400] shrink-0">
-                <a
-                  href="/project/docopilot"
-                  className="flex h-full flex-col overflow-hidden rounded-3xl border border-border/60 bg-white shadow-soft transition-shadow hover:shadow-lift"
-                >
-                  <div
-                    className="relative aspect-4/2 w-full overflow-hidden"
-                    style={{
-                      background:
-                        "linear-gradient(135deg, #FDF3B8 0%, #F6D65A 100%)",
-                    }}
-                  >
-                    <Image
-                      src={"/social-media-clone.webp"}
-                      alt="un.paused — Publication Design"
-                      width={300}
-                      height={200}
-                      loading="lazy"
-                      className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
-                    />
-                    <div className="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-white/90 text-foreground shadow-soft transition-transform group-hover:rotate-12">
-                      <ArrowUpRight className="h-5 w-5" />
-                    </div>
+              {projects.map((project) => {
+                const thumbnail = project.images[0];
+                const { width, height } = project.imageSize ?? {
+                  width: 1200,
+                  height: 800,
+                };
+
+                return (
+                  <div key={project.slug} className="group w-[400] shrink-0">
+                    <a
+                      href={`/project/${project.slug}`}
+                      className="flex h-full flex-col overflow-hidden rounded-3xl border border-border/60 bg-white shadow-soft transition-shadow hover:shadow-lift"
+                    >
+                      <div
+                        className="relative aspect-4/2 w-full overflow-hidden"
+                        style={{ background: project.gradient }}
+                      >
+                        <Image
+                          src={thumbnail}
+                          alt={project.title}
+                          width={width}
+                          height={height}
+                          loading="lazy"
+                          className={`absolute inset-0 h-full w-full transition-transform duration-700 group-hover:scale-[1.04] ${
+                            project.imageFit === "contain"
+                              ? "object-contain"
+                              : "object-cover"
+                          }`}
+                        />
+                        <div className="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-white/90 text-foreground shadow-soft transition-transform group-hover:rotate-12">
+                          <ArrowUpRight className="h-5 w-5" />
+                        </div>
+                      </div>
+                      <div className="flex flex-col gap-2 p-5 sm:p-6">
+                        <span className="w-fit rounded-full bg-(--sunshine-soft) px-3 py-1 text-xs font-medium text-foreground/70">
+                          {project.tags.join(" · ")}
+                        </span>
+                        <h3 className="font-display text-xl font-semibold leading-tight sm:text-2xl">
+                          {project.title}
+                        </h3>
+                        <p className="text-xs font-medium uppercase tracking-[0.14em] text-foreground/50">
+                          {project.tagline}
+                        </p>
+                        <p className="text-sm leading-relaxed text-muted-foreground">
+                          {project.description}
+                        </p>
+                      </div>
+                    </a>
                   </div>
-                  <div className="flex flex-col gap-2 p-5 sm:p-6">
-                    <span className="w-fit rounded-full bg-(--sunshine-soft) px-3 py-1 text-xs font-medium text-foreground/70">
-                      React · WebSocket · Docker
-                    </span>
-                    <h3 className="font-display text-xl font-semibold leading-tight sm:text-2xl">
-                      DocoPilot
-                    </h3>
-                    <p className="text-xs font-medium uppercase tracking-[0.14em] text-foreground/50">
-                      A self-hosted Docker fleet-management platform
-                    </p>
-                    <p className="text-sm leading-relaxed text-muted-foreground">
-                      DocoPilot enables remote container and image lifecycle
-                      management and monitoring across multiple servers from a
-                      single dashboard, built on a secure agent-server-client
-                      architecture over outbound-only WebSockets.
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <div className="group w-[400] shrink-0">
-                <a
-                  href="/project/sql-inspector"
-                  className="flex h-full flex-col overflow-hidden rounded-3xl border border-border/60 bg-white shadow-soft transition-shadow hover:shadow-lift"
-                >
-                  <div
-                    className="relative aspect-4/2 w-full overflow-hidden"
-                    style={{
-                      background:
-                        "linear-gradient(135deg, #FDF3B8 0%, #F6D65A 100%)",
-                    }}
-                  >
-                    <Image
-                      src={"/finance-dashboard.webp"}
-                      alt="SQL Inspector — Open-source Dev Tool"
-                      loading="lazy"
-                      width={300}
-                      height={200}
-                      className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
-                    />
-                    <div className="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-white/90 text-foreground shadow-soft transition-transform group-hover:rotate-12">
-                      <ArrowUpRight className="h-5 w-5" />
-                    </div>
-                  </div>
-                  <div className="flex flex-col gap-2 p-5 sm:p-6">
-                    <span className="w-fit rounded-full bg-(--sunshine-soft) px-3 py-1 text-xs font-medium text-foreground/70">
-                      Node.js · WebSockets · SQLite
-                    </span>
-                    <h3 className="font-display text-xl font-semibold leading-tight sm:text-2xl">
-                      SQL Inspector
-                    </h3>
-                    <p className="text-xs font-medium uppercase tracking-[0.14em] text-foreground/50">
-                      Browse live SQLite data from mobile & hybrid apps
-                    </p>
-                    <p className="text-sm leading-relaxed text-muted-foreground">
-                      A published open-source npm dev tool that lets developers
-                      browse live SQLite data in a browser — no pulling .db
-                      files or platform-specific IDE inspectors — with a
-                      pluggable adapter for any embedded database.
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <div className="group w-[400] shrink-0">
-                <a
-                  href="/project/project-vault"
-                  className="flex h-full flex-col overflow-hidden rounded-3xl border border-border/60 bg-white shadow-soft transition-shadow hover:shadow-lift"
-                >
-                  <div
-                    className="relative aspect-4/2 w-full overflow-hidden"
-                    style={{
-                      background:
-                        "linear-gradient(135deg, #FDF3B8 0%, #F6D65A 100%)",
-                    }}
-                  >
-                    <Image
-                      src={"/project-management-dashboard.webp"}
-                      alt="Angry Toast — Brand Identity &amp; Packaging"
-                      loading="lazy"
-                      width={300}
-                      height={200}
-                      className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
-                    />
-                    <div className="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-white/90 text-foreground shadow-soft transition-transform group-hover:rotate-12">
-                      <ArrowUpRight className="h-5 w-5" />
-                    </div>
-                  </div>
-                  <div className="flex flex-col gap-2 p-5 sm:p-6">
-                    <span className="w-fit rounded-full bg-(--sunshine-soft) px-3 py-1 text-xs font-medium text-foreground/70">
-                      Electron · React · Node.js · PostgreSQL
-                    </span>
-                    <h3 className="font-display text-xl font-semibold leading-tight sm:text-2xl">
-                      Project Vault
-                    </h3>
-                    <p className="text-xs font-medium uppercase tracking-[0.14em] text-foreground/50">
-                      A local-first project management desktop app
-                    </p>
-                    <p className="text-sm leading-relaxed text-muted-foreground">
-                      Project Vault combines an Electron desktop application
-                      with React, Node.js, and PostgreSQL. It uses a
-                      dual-database architecture, LAN-based team collaboration
-                      via mDNS discovery, and runs without relying entirely on
-                      the cloud.
-                    </p>
-                  </div>
-                </a>
-              </div>
+                );
+              })}
             </div>
           </div>
         </div>

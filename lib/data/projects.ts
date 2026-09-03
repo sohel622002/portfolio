@@ -5,7 +5,9 @@ export type Project = {
   tagline: string;
   description: string;
   longDescription: string[];
-  image: string;
+  images: string[];
+  imageSize?: { width: number; height: number };
+  imageFit?: "cover" | "contain";
   gradient: string;
   tags: string[];
   year: string;
@@ -16,7 +18,6 @@ export type Project = {
     github?: string;
   };
   highlights: string[];
-  gallery?: string[];
 };
 
 export const projects: Project[] = [
@@ -32,7 +33,7 @@ export const projects: Project[] = [
       "It uses a secure agent-server-client architecture built on outbound-only WebSocket connections with HMAC-signed handshakes and per-server credential pairs, eliminating the need to expose Docker sockets or open inbound ports on managed hosts.",
       "Production-readiness was built in from the ground up: structured logging, a persisted audit trail, automated tests, and CI/CD pipelines for multi-service builds and container image publishing.",
     ],
-    image: "/social-media-clone.webp",
+    images: ["/social-media-clone.webp"],
     gradient: "linear-gradient(135deg, #FDF3B8 0%, #F6D65A 100%)",
     tags: ["React", "WebSocket", "Supabase", "Docker", "Node.js", "Express"],
     year: "2025",
@@ -61,8 +62,10 @@ export const projects: Project[] = [
       "It's built around a 3-tier architecture (vanilla browser UI, a Node.js relay server, and an in-app WebSocket client) with a pluggable DataSource adapter pattern, so any embedded database can plug in via two methods: listTables() and getTableData().",
       "The self-hosted browser UI supports table search, cross-column row filtering, pagination, JSON cell inspection, and a light/dark theme, relayed over WebSocket with request/response correlation, timeouts, and auto-reconnect.",
     ],
-    image: "/finance-dashboard.webp",
-    gradient: "linear-gradient(135deg, #FDF3B8 0%, #F6D65A 100%)",
+    images: ["/project-images/sql-inspector/dashboard-ui.png"],
+    imageSize: { width: 1918, height: 874 },
+    imageFit: "contain",
+    gradient: "var(--sunshine-soft)",
     tags: ["Node.js", "WebSockets", "SQLite", "Capacitor"],
     year: "2025",
     role: "Open-source Author",
@@ -89,7 +92,7 @@ export const projects: Project[] = [
       "It uses a dual-database architecture — Supabase (PostgreSQL) for cloud authentication and local PostgreSQL for project, task, and user data via Prisma ORM — with an admin-client networking model where an admin hosts the local database and teammates connect over LAN using Bonjour (mDNS) service discovery.",
       "The Kanban-style board supports drag-and-drop task management, custom stages, assignees, priorities, and due dates, with real-time updates across clients via Socket.IO.",
     ],
-    image: "/project-management-dashboard.webp",
+    images: ["/project-management-dashboard.webp"],
     gradient: "linear-gradient(135deg, #FDF3B8 0%, #F6D65A 100%)",
     tags: ["Electron", "React", "Node.js", "PostgreSQL"],
     year: "2025",

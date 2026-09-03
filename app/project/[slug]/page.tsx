@@ -1,10 +1,10 @@
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getProject, getProjectSlugs, projects } from "@/lib/data/projects";
 import Footer from "@/app/components/Footer";
+import ProjectImageCarousel from "@/app/components/ProjectImageCarousel";
 
 export function generateStaticParams() {
   return getProjectSlugs().map((slug) => ({ slug }));
@@ -138,12 +138,12 @@ export default async function ProjectPage({
             className="relative mt-10 aspect-16/9 w-full overflow-hidden rounded-3xl border border-border/60 shadow-soft"
             style={{ background: project.gradient }}
           >
-            <Image
-              src={project.image}
+            <ProjectImageCarousel
+              images={project.images}
               alt={project.title}
-              fill
-              priority
-              className="object-cover"
+              imageFit={project.imageFit}
+              width={project.imageSize?.width ?? 1200}
+              height={project.imageSize?.height ?? 800}
             />
           </div>
 
@@ -180,25 +180,6 @@ export default async function ProjectPage({
               </ul>
             </div>
           </div>
-
-          {/* Gallery */}
-          {project.gallery && project.gallery.length > 0 && (
-            <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2">
-              {project.gallery.map((src, i) => (
-                <div
-                  key={i}
-                  className="relative aspect-4/3 w-full overflow-hidden rounded-3xl border border-border/60 shadow-soft"
-                >
-                  <Image
-                    src={src}
-                    alt={`${project.title} screenshot ${i + 1}`}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              ))}
-            </div>
-          )}
 
           {/* Next project */}
           <div className="mt-20 border-t border-border/60 pt-10">
