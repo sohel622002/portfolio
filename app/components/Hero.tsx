@@ -33,8 +33,8 @@ export default function Hero() {
           </p>
           <div className="animate-actions mt-8 flex flex-wrap items-center gap-3">
             <a
-              href="/__l5e/assets-v1/a2ab0396-8a4b-4aaf-9a70-4e369bc1570f/sohelshaikh_resume.pdf"
-              download="sohelshaikh_resume.pdf"
+              href="/sohel-resume.pdf"
+              download="sohel-resume.pdf"
               className="group inline-flex items-center gap-2 rounded-full bg-foreground px-5 py-3 text-sm font-medium text-background shadow-soft transition-transform hover:scale-[1.02] active:scale-[0.98]"
             >
               Grab my resume

@@ -73,7 +73,7 @@ export default function About() {
                     Lately
                   </div>
                   <p className="font-display text-2xl font-semibold leading-snug">
-                    Cricket · Side projects · Learning
+                    Side projects · Learning
                   </p>
                   {/* <p className="text-sm text-muted-foreground">
                     by Thomas Erikson

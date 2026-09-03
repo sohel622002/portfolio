@@ -20,8 +20,8 @@ export default function Header() {
           <NavLink link="#work" linkName="Work" />
           <NavLink link="#experience" linkName="Experience" />
           <a
-            href="/__l5e/assets-v1/a2ab0396-8a4b-4aaf-9a70-4e369bc1570f/sohel_shaikh_resume.pdf"
-            download="sohel_shaikh_resume.pdf"
+            href="/sohel-resume.pdf"
+            download="sohel-resume.pdf"
             className="group inline-flex items-center gap-1 rounded-full bg-foreground px-4 py-2 text-sm font-medium text-background transition-transform hover:scale-[1.02] active:scale-[0.98]"
           >
             Resume

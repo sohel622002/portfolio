@@ -44,7 +44,7 @@ export default function CurrentWork() {
                       style={{ zIndex: "1", transform: "none" }}
                     >
                       <a
-                        href="/project/angry-toast"
+                        href="/project/docopilot"
                         className="group flex items-center gap-4 rounded-3xl border border-border/60 bg-white p-4 shadow-lift transition-colors sm:gap-6 sm:p-6 hover:bg-(--sunshine-light)"
                       >
                         <div
@@ -63,29 +63,29 @@ export default function CurrentWork() {
                         </div>
                         <div className="min-w-0 flex-1">
                           <span className="text-[11px] font-medium uppercase tracking-[0.16em] text-foreground/50">
-                            Project Management
+                            Docker Fleet Management
                           </span>
                           <h3 className="font-display mt-1 text-lg font-semibold leading-tight sm:text-xl">
-                            Project Vault
+                            DocoPilot
                           </h3>
                           <div className="mt-2 space-x-2">
                             <span className="inline-block rounded-full bg-(--sunshine-soft) px-3 py-1 text-[11px] font-medium text-foreground/70 group-hover:bg-background">
-                              In progress
-                            </span>
-                            <span className="inline-block rounded-full bg-(--sunshine-soft) px-3 py-1 text-[11px] font-medium text-foreground/70 group-hover:bg-background">
-                              Electron
+                              Ongoing
                             </span>
                             <span className="inline-block rounded-full bg-(--sunshine-soft) px-3 py-1 text-[11px] font-medium text-foreground/70 group-hover:bg-background">
                               React
                             </span>
                             <span className="inline-block rounded-full bg-(--sunshine-soft) px-3 py-1 text-[11px] font-medium text-foreground/70 group-hover:bg-background">
-                              PostgreSQL
+                              Docker
+                            </span>
+                            <span className="inline-block rounded-full bg-(--sunshine-soft) px-3 py-1 text-[11px] font-medium text-foreground/70 group-hover:bg-background">
+                              WebSocket
                             </span>
                           </div>
                           <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                            A local-first project management app exploring
-                            desktop applications, offline data, and team
-                            collaboration.
+                            A self-hosted Docker fleet-management platform for
+                            remote container/image lifecycle management and
+                            monitoring across multiple servers.
                           </p>
                         </div>
                         <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-foreground text-background transition-transform group-hover:rotate-12">
@@ -101,7 +101,7 @@ export default function CurrentWork() {
                       }}
                     >
                       <a
-                        href="/project/rogue-sailor-rum"
+                        href="/project/project-vault"
                         className="group flex items-center gap-4 rounded-3xl border border-border/60 bg-white p-4 shadow-lift transition-colors sm:gap-6 sm:p-6 hover:bg-[var(--sunshine-soft)]"
                       >
                         <div
@@ -120,19 +120,18 @@ export default function CurrentWork() {
                         </div>
                         <div className="min-w-0 flex-1">
                           <span className="text-[11px] font-medium uppercase tracking-[0.16em] text-foreground/50">
-                            Rum label design
+                            Project Management
                           </span>
                           <h3 className="font-display mt-1 text-lg font-semibold leading-tight sm:text-xl">
-                            Rogue Sailor Rum
+                            Project Vault
                           </h3>
                           <span className="mt-2 inline-block rounded-full bg-[var(--sunshine-soft)] px-3 py-1 text-[11px] font-medium text-foreground/70">
-                            2 days
+                            In progress
                           </span>
                           <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                            Rogue Sailor Rum caters to India's value-conscious
-                            lower-middle and middle-class male consumers,
-                            balancing quality craftsmanship with everyday
-                            affordability.
+                            A local-first project management app exploring
+                            desktop applications, offline data, and team
+                            collaboration.
                           </p>
                         </div>
                         <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-foreground text-background transition-transform group-hover:rotate-12">
@@ -140,6 +139,7 @@ export default function CurrentWork() {
                         </span>
                       </a>
                     </div>
+                    {/*
                     <div
                       className="absolute inset-x-0 top-0 origin-bottom stacked-card"
                       style={{
@@ -158,12 +158,6 @@ export default function CurrentWork() {
                               "linear-gradient(135deg, #FFF6D6 0%, #F6D65A 100%)",
                           }}
                         >
-                          {/* <Image
-                            src="/__l5e/assets-v1/6f01d7e3-c77c-4293-bf7b-58da8472b690/darrys-cover.png"
-                            alt="Darry's smoothie cards"
-                            loading="lazy"
-                            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                          /> */}
                         </div>
                         <div className="min-w-0 flex-1">
                           <span className="text-[11px] font-medium uppercase tracking-[0.16em] text-foreground/50">
@@ -186,6 +180,7 @@ export default function CurrentWork() {
                         </span>
                       </a>
                     </div>
+                    */}
                   </div>
                 </div>
               </div>

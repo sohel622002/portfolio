@@ -36,7 +36,7 @@ export default function Work() {
             <div className="flex gap-6 horizontal-track">
               <div className="group w-[400] shrink-0">
                 <a
-                  href="/project/un-paused"
+                  href="/project/docopilot"
                   className="flex h-full flex-col overflow-hidden rounded-3xl border border-border/60 bg-white shadow-soft transition-shadow hover:shadow-lift"
                 >
                   <div
@@ -60,26 +60,26 @@ export default function Work() {
                   </div>
                   <div className="flex flex-col gap-2 p-5 sm:p-6">
                     <span className="w-fit rounded-full bg-(--sunshine-soft) px-3 py-1 text-xs font-medium text-foreground/70">
-                      React · Firebase
+                      React · WebSocket · Docker
                     </span>
                     <h3 className="font-display text-xl font-semibold leading-tight sm:text-2xl">
-                      Zyklo
+                      DocoPilot
                     </h3>
                     <p className="text-xs font-medium uppercase tracking-[0.14em] text-foreground/50">
-                      A social media platform
+                      A self-hosted Docker fleet-management platform
                     </p>
                     <p className="text-sm leading-relaxed text-muted-foreground">
-                      Zyklo was one of the projects where I explored building a
-                      complete frontend experience with React. I worked on the
-                      interface, navigation, application state, and Firebase
-                      integration to bring the product together.
+                      DocoPilot enables remote container and image lifecycle
+                      management and monitoring across multiple servers from a
+                      single dashboard, built on a secure agent-server-client
+                      architecture over outbound-only WebSockets.
                     </p>
                   </div>
                 </a>
               </div>
               <div className="group w-[400] shrink-0">
                 <a
-                  href="/project/spicey-guava"
+                  href="/project/sql-inspector"
                   className="flex h-full flex-col overflow-hidden rounded-3xl border border-border/60 bg-white shadow-soft transition-shadow hover:shadow-lift"
                 >
                   <div
@@ -91,7 +91,7 @@ export default function Work() {
                   >
                     <Image
                       src={"/finance-dashboard.webp"}
-                      alt="Spicey Guava — Brand Identity &amp; Website Development"
+                      alt="SQL Inspector — Open-source Dev Tool"
                       loading="lazy"
                       width={300}
                       height={200}
@@ -103,27 +103,26 @@ export default function Work() {
                   </div>
                   <div className="flex flex-col gap-2 p-5 sm:p-6">
                     <span className="w-fit rounded-full bg-(--sunshine-soft) px-3 py-1 text-xs font-medium text-foreground/70">
-                      Next.js · TypeScript · Tailwind
+                      Node.js · WebSockets · SQLite
                     </span>
                     <h3 className="font-display text-xl font-semibold leading-tight sm:text-2xl">
-                      Origin Financial
+                      SQL Inspector
                     </h3>
                     <p className="text-xs font-medium uppercase tracking-[0.14em] text-foreground/50">
-                      A finance tracker
+                      Browse live SQLite data from mobile & hybrid apps
                     </p>
                     <p className="text-sm leading-relaxed text-muted-foreground">
-                      A project focused on creating a clean, responsive
-                      interface while experimenting with modern Next.js
-                      patterns. I worked with TypeScript, Tailwind CSS, and
-                      Framer Motion to bring the interface and interactions
-                      together.
+                      A published open-source npm dev tool that lets developers
+                      browse live SQLite data in a browser — no pulling .db
+                      files or platform-specific IDE inspectors — with a
+                      pluggable adapter for any embedded database.
                     </p>
                   </div>
                 </a>
               </div>
               <div className="group w-[400] shrink-0">
                 <a
-                  href="/project/angry-toast"
+                  href="/project/project-vault"
                   className="flex h-full flex-col overflow-hidden rounded-3xl border border-border/60 bg-white shadow-soft transition-shadow hover:shadow-lift"
                 >
                   <div
@@ -153,14 +152,13 @@ export default function Work() {
                       Project Vault
                     </h3>
                     <p className="text-xs font-medium uppercase tracking-[0.14em] text-foreground/50">
-                      An offline project management.
+                      A local-first project management desktop app
                     </p>
                     <p className="text-sm leading-relaxed text-muted-foreground">
-                      Project Vault is one of my deeper engineering projects,
-                      combining an Electron desktop application with React,
-                      Node.js, and PostgreSQL. It explores local-first data,
-                      team collaboration, authentication, network discovery, and
-                      running a complete application without relying entirely on
+                      Project Vault combines an Electron desktop application
+                      with React, Node.js, and PostgreSQL. It uses a
+                      dual-database architecture, LAN-based team collaboration
+                      via mDNS discovery, and runs without relying entirely on
                       the cloud.
                     </p>
                   </div>
