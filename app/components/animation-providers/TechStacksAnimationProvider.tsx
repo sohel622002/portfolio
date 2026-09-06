@@ -7,6 +7,13 @@ import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(ScrollTrigger);
 
+function getRowScrollDistance(row: HTMLElement) {
+  const wrapper = row.parentElement as HTMLElement;
+  if (!wrapper) return 0;
+
+  return Math.max(0, row.scrollWidth - wrapper.clientWidth);
+}
+
 export default function TechStacksAnimationProvider({
   children,
 }: {
@@ -17,19 +24,23 @@ export default function TechStacksAnimationProvider({
   useGSAP(
     () => {
       const container = containerRef.current;
+      const stacksSection = container?.querySelector(
+        ".tech-stacks-section",
+      ) as HTMLElement | null;
+      const section = stacksSection?.closest("section") as HTMLElement | null;
       const rows = gsap.utils.toArray<HTMLElement>(
         ".tech-stack-row",
         container,
       );
 
-      if (!container || !rows.length) return;
+      if (!section || !rows.length) return;
 
       const tl = gsap.timeline();
 
       rows.forEach((row, index) => {
-        const wrapper = row.parentElement as HTMLElement;
-        const distance = Math.max(0, row.scrollWidth - wrapper.clientWidth);
+        const distance = getRowScrollDistance(row);
         const direction = index % 2 === 0 ? -1 : 1;
+
         gsap.set(row, {
           x: direction === -1 ? 0 : -distance,
         });
@@ -45,22 +56,33 @@ export default function TechStacksAnimationProvider({
         );
       });
 
-      ScrollTrigger.create({
-        trigger: container,
-        pin: container,
-        start: "top top",
+      const scrollTrigger = ScrollTrigger.create({
+        trigger: section,
+        pin: section,
+        start: "center center",
         end: () => {
-          const distances = rows.map((row) => {
-            const wrapper = row.parentElement as HTMLElement;
-            return Math.max(0, row.scrollWidth - wrapper.clientWidth);
-          });
-          return `+=${Math.max(...distances)}`;
+          const maxDistance = Math.max(
+            ...rows.map((row) => getRowScrollDistance(row)),
+            1,
+          );
+          return `+=${maxDistance}`;
         },
         scrub: 1,
         animation: tl,
         invalidateOnRefresh: true,
+        anticipatePin: 1,
         markers: false,
       });
+
+      const refresh = () => ScrollTrigger.refresh();
+      refresh();
+
+      window.addEventListener("load", refresh);
+
+      return () => {
+        window.removeEventListener("load", refresh);
+        scrollTrigger.kill();
+      };
     },
     {
       scope: containerRef,
