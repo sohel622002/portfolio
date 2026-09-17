@@ -45,7 +45,7 @@ export default function CurrentWork() {
                     >
                       <a
                         href="/project/docopilot"
-                        className="group flex items-center gap-4 rounded-3xl border border-border/60 bg-white p-4 shadow-lift transition-colors sm:gap-6 sm:p-6 hover:bg-(--sunshine-light)"
+                        className="group flex items-center gap-4 rounded-3xl border border-border/60 bg-card p-4 shadow-lift transition-colors sm:gap-6 sm:p-6 hover:bg-(--sunshine-light)"
                       >
                         <div
                           className="relative h-24 w-24 shrink-0 overflow-hidden rounded-2xl sm:h-32 sm:w-32"
@@ -102,7 +102,7 @@ export default function CurrentWork() {
                     >
                       <a
                         href="/project/project-vault"
-                        className="group flex items-center gap-4 rounded-3xl border border-border/60 bg-white p-4 shadow-lift transition-colors sm:gap-6 sm:p-6 hover:bg-[var(--sunshine-soft)]"
+                        className="group flex items-center gap-4 rounded-3xl border border-border/60 bg-card p-4 shadow-lift transition-colors sm:gap-6 sm:p-6 hover:bg-[var(--sunshine-soft)]"
                       >
                         <div
                           className="relative h-24 w-24 shrink-0 overflow-hidden rounded-2xl sm:h-32 sm:w-32"
@@ -149,7 +149,7 @@ export default function CurrentWork() {
                     >
                       <a
                         href="/project/smoothie-cards"
-                        className="group flex items-center gap-4 rounded-3xl border border-border/60 bg-white p-4 shadow-lift transition-colors sm:gap-6 sm:p-6 hover:bg-[var(--sunshine-soft)]"
+                        className="group flex items-center gap-4 rounded-3xl border border-border/60 bg-card p-4 shadow-lift transition-colors sm:gap-6 sm:p-6 hover:bg-[var(--sunshine-soft)]"
                       >
                         <div
                           className="relative h-24 w-24 shrink-0 overflow-hidden rounded-2xl sm:h-32 sm:w-32"

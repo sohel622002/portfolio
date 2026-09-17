@@ -1,12 +1,13 @@
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { NavLink } from "./NavLink";
+import { ThemeToggle } from "./ThemeToggle";
 
 export default function Header() {
   return (
     <header className="animate-header pointer-events-none fixed left-0 right-0 top-0 z-50 w-full max-w-5xl mx-auto">
       <div className="flex items-center justify-between px-5 py-4 sm:px-8">
-        <div className="pointer-events-auto rounded-full border border-border/70 bg-white/70 px-4 py-2 shadow-soft backdrop-blur-md">
+        <div className="pointer-events-auto rounded-full border border-border/70 bg-card/70 px-4 py-2 shadow-soft backdrop-blur-md">
           <Link
             className="font-display text-xl font-semibold tracking-tight active"
             href="/#top"
@@ -16,7 +17,8 @@ export default function Header() {
             Shaikh<span className="text-(--lavender)">.</span>
           </Link>
         </div>
-        <nav className="pointer-events-auto flex items-center gap-1 rounded-full border border-border/70 bg-white/70 p-1.5 shadow-soft backdrop-blur-md">
+        <nav className="pointer-events-auto flex items-center gap-1 rounded-full border border-border/70 bg-card/70 p-1.5 shadow-soft backdrop-blur-md">
+          <ThemeToggle />
           <NavLink link="#work" linkName="Work" />
           <NavLink link="#experience" linkName="Experience" />
           <a

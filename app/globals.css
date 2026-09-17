@@ -47,6 +47,37 @@
   --shadow-lift: 0 20px 50px -20px #1b1a1f24;
 }
 
+.dark {
+  color-scheme: dark;
+  --background: oklch(17% 0.02 60);
+  --foreground: oklch(96% 0.01 95);
+  --card: oklch(22% 0.02 60);
+  --card-foreground: oklch(96% 0.01 95);
+  --popover: oklch(22% 0.02 60);
+  --popover-foreground: oklch(96% 0.01 95);
+  --sunshine: oklch(42% 0.06 175);
+  --sunshine-soft: oklch(28% 0.04 175);
+  --sunshine-light: oklch(24% 0.03 175);
+  --lavender: oklch(72% 0.1 300);
+  --lavender-soft: oklch(30% 0.06 300);
+  --primary: oklch(96% 0.01 95);
+  --primary-foreground: oklch(17% 0.02 60);
+  --secondary: oklch(26% 0.02 60);
+  --secondary-foreground: oklch(96% 0.01 95);
+  --muted: oklch(26% 0.02 60);
+  --muted-foreground: oklch(68% 0.02 60);
+  --accent: oklch(30% 0.06 300);
+  --accent-foreground: oklch(96% 0.01 95);
+  --border: oklch(32% 0.02 60);
+  --input: oklch(32% 0.02 60);
+  --ring: oklch(72% 0.1 300);
+  --sidebar: oklch(20% 0.02 60);
+  --sidebar-foreground: oklch(96% 0.01 95);
+  --sidebar-border: oklch(32% 0.02 60);
+  --shadow-soft: 0 10px 30px -12px #00000055;
+  --shadow-lift: 0 20px 50px -20px #00000066;
+}
+
 @theme inline {
   --default-font-family: var(--font-sans-family);
   --default-mono-font-family: var(--font-mono);
@@ -54,14 +85,8 @@
   --color-foreground: var(--foreground);
   --color-border: var(--border);
   --color-card: var(--card);
+  --color-muted-foreground: var(--muted-foreground);
 }
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
 
 body {
   background-color: var(--color-background);

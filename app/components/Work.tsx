@@ -46,7 +46,7 @@ export default function Work() {
                   <div key={project.slug} className="group w-[400] shrink-0">
                     <a
                       href={`/project/${project.slug}`}
-                      className="flex h-full flex-col overflow-hidden rounded-3xl border border-border/60 bg-white shadow-soft transition-shadow hover:shadow-lift"
+                      className="flex h-full flex-col overflow-hidden rounded-3xl border border-border/60 bg-card shadow-soft transition-shadow hover:shadow-lift"
                     >
                       <div
                         className="relative aspect-4/2 w-full overflow-hidden"
@@ -64,7 +64,7 @@ export default function Work() {
                               : "object-cover"
                           }`}
                         />
-                        <div className="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-white/90 text-foreground shadow-soft transition-transform group-hover:rotate-12">
+                        <div className="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-card/90 text-foreground shadow-soft transition-transform group-hover:rotate-12">
                           <ArrowUpRight className="h-5 w-5" />
                         </div>
                       </div>

@@ -37,7 +37,7 @@ export default function About() {
                 <span className="text-xs font-medium uppercase tracking-wider text-foreground/60">
                   Sohel, somewhere between work and life
                 </span>
-                <div className="aspect-3/4 w-full overflow-hidden rounded-xl bg-white/70 text-foreground/40">
+                <div className="aspect-3/4 w-full overflow-hidden rounded-xl bg-card/70 text-foreground/40">
                   <Image
                     src={"/sohel-travelling-photo.png"}
                     width={200}
@@ -52,7 +52,7 @@ export default function About() {
               </div>
             </div>
             <div className="space-y-5">
-              <div className="stack-card bg-white rounded-2xl border border-border/60 p-5 shadow-soft transition-shadow hover:shadow-lift">
+              <div className="stack-card bg-card rounded-2xl border border-border/60 p-5 shadow-soft transition-shadow hover:shadow-lift">
                 <div>
                   <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-[var(--sunshine-soft)] px-3 py-1 text-xs font-medium text-foreground/70">
                     <svg
@@ -82,7 +82,7 @@ export default function About() {
               </div>
               <div className="stack-card bg-[var(--lavender-soft)] rounded-2xl border border-border/60 p-5 shadow-soft transition-shadow hover:shadow-lift">
                 <div>
-                  <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-white/70 px-3 py-1 text-xs font-medium text-foreground/70">
+                  <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-card/70 px-3 py-1 text-xs font-medium text-foreground/70">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -106,7 +106,7 @@ export default function About() {
                   </p>
                 </div>
               </div>
-              <div className="stack-card bg-white rounded-2xl border border-border/60 p-5 shadow-soft transition-shadow hover:shadow-lift">
+              <div className="stack-card bg-card rounded-2xl border border-border/60 p-5 shadow-soft transition-shadow hover:shadow-lift">
                 <div>
                   <p className="mb-3 text-xs font-medium uppercase tracking-wider text-foreground/60">
                     Currently working with

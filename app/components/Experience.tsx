@@ -38,11 +38,11 @@ export default function Experience() {
                 >
                   <span
                     aria-hidden="true"
-                    className="absolute left-0 top-3 grid h-6 w-6 place-items-center rounded-full bg-white shadow-soft sm:left-1"
+                    className="absolute left-0 top-3 grid h-6 w-6 place-items-center rounded-full bg-card shadow-soft sm:left-1"
                   >
                     <span className="h-2 w-2 rounded-full bg-[var(--lavender)]" />
                   </span>
-                  <div className="rounded-2xl border border-border/60 bg-white p-5 shadow-soft sm:p-6 reveal-card">
+                  <div className="rounded-2xl border border-border/60 bg-card p-5 shadow-soft sm:p-6 reveal-card">
                     <div className="grid grid-cols-[minmax(0,1fr)_auto] items-baseline gap-3">
                       <h3 className="font-display truncate text-lg font-semibold sm:text-xl">
                         Convasys Technology Pvt Ltd
@@ -63,9 +63,11 @@ export default function Experience() {
                         <span>
                           Developed and maintained{" "}
                           <b className="highlight-text">Angular</b> web
-                          applications and Ionic-based mobile apps for
-                          Android, iOS, and PWA, supporting the company's core
-                          product across platforms.
+                          applications and{" "}
+                          <b className="highlight-text">Ionic</b>-based mobile
+                          apps for Android, iOS, and{" "}
+                          <b className="highlight-text">PWA</b>, supporting the
+                          company's core product across platforms.
                         </span>
                       </li>
                       <li className="flex gap-3 text-sm leading-relaxed text-muted-foreground">
@@ -74,10 +76,11 @@ export default function Experience() {
                           className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--lavender)]"
                         />
                         <span>
-                          Implemented reactive programming patterns using
-                          RxJS to manage complex asynchronous flows and
-                          application state, and integrated RESTful APIs in
-                          close collaboration with backend teams.
+                          Implemented reactive programming patterns using{" "}
+                          <b className="highlight-text">RxJS</b> to manage
+                          complex asynchronous flows and application state, and
+                          integrated <b className="highlight-text">RESTful APIs</b>{" "}
+                          in close collaboration with backend teams.
                         </span>
                       </li>
                       <li className="flex gap-3 text-sm leading-relaxed text-muted-foreground">
@@ -86,11 +89,13 @@ export default function Experience() {
                           className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--lavender)]"
                         />
                         <span>
-                          Built and maintained company websites using
-                          Next.js with a focus on performance, SEO, and
-                          scalability, while contributing to backend
-                          development (~40% of workload) using NestJS to
-                          build REST APIs and microservices.
+                          Built and maintained company websites using{" "}
+                          <b className="highlight-text">Next.js</b> with a focus
+                          on performance, SEO, and scalability, while
+                          contributing to backend development (~40% of
+                          workload) using <b className="highlight-text">NestJS</b>{" "}
+                          to build REST APIs and{" "}
+                          <b className="highlight-text">microservices</b>.
                         </span>
                       </li>
                     </ul>
@@ -102,11 +107,11 @@ export default function Experience() {
                 >
                   <span
                     aria-hidden="true"
-                    className="absolute left-0 top-3 grid h-6 w-6 place-items-center rounded-full bg-white shadow-soft sm:left-1"
+                    className="absolute left-0 top-3 grid h-6 w-6 place-items-center rounded-full bg-card shadow-soft sm:left-1"
                   >
                     <span className="h-2 w-2 rounded-full bg-[var(--lavender)]" />
                   </span>
-                  <div className="rounded-2xl border border-border/60 bg-white p-5 shadow-soft sm:p-6 reveal-card">
+                  <div className="rounded-2xl border border-border/60 bg-card p-5 shadow-soft sm:p-6 reveal-card">
                     <div className="grid grid-cols-[minmax(0,1fr)_auto] items-baseline gap-3">
                       <h3 className="font-display truncate text-lg font-semibold sm:text-xl">
                         Freelance
@@ -125,11 +130,12 @@ export default function Experience() {
                           className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--lavender)]"
                         />
                         <span>
-                          Delivered frontend-focused freelance projects using
-                          React and Next.js, building responsive UIs with
-                          HTML, CSS, SCSS, and JavaScript, and optimizing
-                          client websites for performance, SEO, and
-                          scalability.
+                          Delivered frontend-focused freelance projects using{" "}
+                          <b className="highlight-text">React</b> and{" "}
+                          <b className="highlight-text">Next.js</b>, building
+                          responsive UIs with HTML, CSS, SCSS, and JavaScript,
+                          and optimizing client websites for performance, SEO,
+                          and scalability.
                         </span>
                       </li>
                       <li className="flex gap-3 text-sm leading-relaxed text-muted-foreground">
@@ -138,9 +144,13 @@ export default function Experience() {
                           className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--lavender)]"
                         />
                         <span>
-                          Developed REST APIs using Node.js and Express.js to
-                          support frontend functionality, and designed and
-                          managed databases using PostgreSQL and Prisma ORM.
+                          Developed REST APIs using{" "}
+                          <b className="highlight-text">Node.js</b> and{" "}
+                          <b className="highlight-text">Express.js</b> to support
+                          frontend functionality, and designed and managed
+                          databases using{" "}
+                          <b className="highlight-text">PostgreSQL</b> and{" "}
+                          <b className="highlight-text">Prisma</b> ORM.
                         </span>
                       </li>
                       <li className="flex gap-3 text-sm leading-relaxed text-muted-foreground">
@@ -149,10 +159,11 @@ export default function Experience() {
                           className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--lavender)]"
                         />
                         <span>
-                          Managed the full project lifecycle — requirement
-                          gathering, development, testing, and client
-                          feedback — for multiple independent clients across
-                          India and Malaysia.
+                          Managed the{" "}
+                          <b className="highlight-text">full project lifecycle</b>{" "}
+                          — requirement gathering, development, testing, and
+                          client feedback — for multiple independent clients
+                          across India and Malaysia.
                         </span>
                       </li>
                     </ul>

@@ -53,7 +53,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noreferrer"
                   aria-label="GitHub"
-                  className="grid h-10 w-10 place-items-center rounded-full border border-border bg-white text-foreground/70 transition hover:bg-[var(--sunshine-soft)] hover:text-foreground"
+                  className="grid h-10 w-10 place-items-center rounded-full border border-border bg-card text-foreground/70 transition hover:bg-[var(--sunshine-soft)] hover:text-foreground"
                 >
                   <svg
                     role="img"
@@ -72,7 +72,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noreferrer"
                   aria-label="LinkedIn"
-                  className="grid h-10 w-10 place-items-center rounded-full border border-border bg-white text-foreground/70 transition hover:bg-[var(--sunshine-soft)] hover:text-foreground"
+                  className="grid h-10 w-10 place-items-center rounded-full border border-border bg-card text-foreground/70 transition hover:bg-[var(--sunshine-soft)] hover:text-foreground"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

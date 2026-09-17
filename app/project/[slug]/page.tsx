@@ -39,7 +39,7 @@ export default async function ProjectPage({
     <main>
       <header className="pointer-events-none fixed left-0 right-0 top-0 z-50 w-full max-w-5xl mx-auto">
         <div className="flex items-center justify-between px-5 py-4 sm:px-8">
-          <div className="pointer-events-auto rounded-full border border-border/70 bg-white/70 px-4 py-2 shadow-soft backdrop-blur-md">
+          <div className="pointer-events-auto rounded-full border border-border/70 bg-card/70 px-4 py-2 shadow-soft backdrop-blur-md">
             <Link
               className="font-display text-xl font-semibold tracking-tight"
               href="/#top"
@@ -49,7 +49,7 @@ export default async function ProjectPage({
           </div>
           <Link
             href="/#work"
-            className="pointer-events-auto inline-flex items-center gap-1 rounded-full border border-border/70 bg-white/70 px-4 py-2 text-sm font-medium text-foreground shadow-soft backdrop-blur-md transition-transform hover:scale-[1.02] active:scale-[0.98]"
+            className="pointer-events-auto inline-flex items-center gap-1 rounded-full border border-border/70 bg-card/70 px-4 py-2 text-sm font-medium text-foreground shadow-soft backdrop-blur-md transition-transform hover:scale-[1.02] active:scale-[0.98]"
           >
             <ArrowLeft className="h-4 w-4" />
             Back to work
@@ -171,7 +171,7 @@ export default async function ProjectPage({
                 {project.highlights.map((highlight, i) => (
                   <li
                     key={i}
-                    className="flex gap-3 rounded-2xl border border-border/60 bg-white p-4 text-sm leading-relaxed text-muted-foreground shadow-soft"
+                    className="flex gap-3 rounded-2xl border border-border/60 bg-card p-4 text-sm leading-relaxed text-muted-foreground shadow-soft"
                   >
                     <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-(--sunshine)" />
                     {highlight}
@@ -188,7 +188,7 @@ export default async function ProjectPage({
             </p>
             <Link
               href={`/project/${nextProject.slug}`}
-              className="group flex items-center justify-between gap-4 rounded-3xl border border-border/60 bg-white p-6 shadow-soft transition-shadow hover:shadow-lift"
+              className="group flex items-center justify-between gap-4 rounded-3xl border border-border/60 bg-card p-6 shadow-soft transition-shadow hover:shadow-lift"
             >
               <div>
                 <h3 className="font-display text-xl font-semibold leading-tight sm:text-2xl">

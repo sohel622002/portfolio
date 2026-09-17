@@ -44,7 +44,7 @@ export default function ProjectImageCarousel({
             type="button"
             onClick={goPrev}
             aria-label="Previous image"
-            className="absolute left-4 top-1/2 grid h-10 w-10 -translate-y-1/2 place-items-center rounded-full bg-white/90 text-foreground shadow-soft transition-transform hover:scale-105"
+            className="absolute left-4 top-1/2 grid h-10 w-10 -translate-y-1/2 place-items-center rounded-full bg-card/90 text-foreground shadow-soft transition-transform hover:scale-105"
           >
             <ArrowLeft className="h-5 w-5" />
           </button>
@@ -52,7 +52,7 @@ export default function ProjectImageCarousel({
             type="button"
             onClick={goNext}
             aria-label="Next image"
-            className="absolute right-4 top-1/2 grid h-10 w-10 -translate-y-1/2 place-items-center rounded-full bg-white/90 text-foreground shadow-soft transition-transform hover:scale-105"
+            className="absolute right-4 top-1/2 grid h-10 w-10 -translate-y-1/2 place-items-center rounded-full bg-card/90 text-foreground shadow-soft transition-transform hover:scale-105"
           >
             <ArrowRight className="h-5 w-5" />
           </button>
