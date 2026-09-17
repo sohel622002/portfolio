@@ -7,23 +7,23 @@ export default function About() {
       <section
         id="about"
         aria-labelledby="about-heading"
-        className="relative py-12 sm:py-14"
+        className="relative overflow-x-clip py-10 sm:py-14"
       >
-        <div className="mx-auto max-w-5xl px-5 sm:px-8">
-          <div className="mb-12 space-y-4">
+        <div className="mx-auto max-w-5xl px-4 sm:px-8">
+          <div className="mb-8 space-y-3 sm:mb-12 sm:space-y-4">
             <div className="max-w-xl">
-              <p className="mb-3 text-xs font-medium uppercase tracking-[0.2em] text-foreground/50">
+              <p className="mb-2 text-[11px] font-medium tracking-[0.14em] text-foreground/50 uppercase sm:mb-3 sm:text-xs sm:tracking-[0.2em]">
                 About · a little more about me
               </p>
               <h2
                 id="about-heading"
-                className="font-display text-3xl font-semibold leading-tight tracking-tight sm:text-4xl md:text-5xl"
+                className="font-display text-[1.75rem] font-semibold leading-tight tracking-tight text-balance sm:text-4xl md:text-5xl"
               >
-                A little bit about me, beyond the
-                <span className="ml-2 highlight-text">IDE</span>.
+                A little bit about me, beyond the{" "}
+                <span className="highlight-text whitespace-nowrap">IDE</span>.
               </h2>
             </div>
-            <p className="max-w-xl text-muted-foreground">
+            <p className="max-w-xl text-[0.9375rem] leading-relaxed text-pretty text-muted-foreground sm:text-base">
               When I’m not working, I’m usually switching between cricket
               matches, learning something new, working on a side project, or
               simply taking some time to grow — in knowledge, in life, and in my
@@ -31,28 +31,29 @@ export default function About() {
             </p>
           </div>
           {/* columns-1 gap-5 sm:columns-2 [&amp;&gt;*]:mb-5 [&amp;&gt;*:break-inside-avoid */}
-          <div className="grid grid-cols-2 gap-5">
-            <div className="work-life-card bg-(--sunshine-soft) rounded-2xl border border-border/60 p-5 shadow-soft transition-shadow hover:shadow-lift">
-              <div className="flex h-full flex-col justify-between gap-4">
-                <span className="text-xs font-medium uppercase tracking-wider text-foreground/60">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5">
+            <div className="work-life-card rounded-2xl border border-border/60 bg-(--sunshine-soft) p-4 shadow-soft transition-shadow hover:shadow-lift sm:p-5">
+              <div className="flex h-full flex-col justify-between gap-3 sm:gap-4">
+                <span className="text-[11px] font-medium tracking-wide text-foreground/60 uppercase sm:text-xs sm:tracking-wider">
                   Sohel, somewhere between work and life
                 </span>
-                <div className="aspect-3/4 w-full overflow-hidden rounded-xl bg-card/70 text-foreground/40">
+                <div className="aspect-[5/4] w-full max-h-[min(420px,70vw)] overflow-hidden rounded-xl bg-card/70 text-foreground/40 sm:aspect-3/4 sm:max-h-none">
                   <Image
                     src={"/sohel-travelling-photo.png"}
                     width={200}
                     height={300}
                     alt="Sohel in the mountains"
+                    sizes="(max-width: 640px) 100vw, 50vw"
                     className="h-full w-full object-cover object-center"
                   />
                 </div>
-                <p className="text-sm text-foreground/70">
+                <p className="text-sm leading-relaxed text-foreground/70">
                   Proof that I occasionally manage to take a decent picture.
                 </p>
               </div>
             </div>
-            <div className="space-y-5">
-              <div className="stack-card bg-card rounded-2xl border border-border/60 p-5 shadow-soft transition-shadow hover:shadow-lift">
+            <div className="grid grid-cols-1 gap-4 sm:gap-5">
+              <div className="stack-card rounded-2xl border border-border/60 bg-card p-4 shadow-soft transition-shadow hover:shadow-lift sm:p-5">
                 <div>
                   <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-[var(--sunshine-soft)] px-3 py-1 text-xs font-medium text-foreground/70">
                     <svg
@@ -72,7 +73,7 @@ export default function About() {
                     </svg>{" "}
                     Lately
                   </div>
-                  <p className="font-display text-2xl font-semibold leading-snug">
+                  <p className="font-display text-xl font-semibold leading-snug sm:text-2xl">
                     Side projects · Learning
                   </p>
                   {/* <p className="text-sm text-muted-foreground">
@@ -80,7 +81,7 @@ export default function About() {
                   </p> */}
                 </div>
               </div>
-              <div className="stack-card bg-[var(--lavender-soft)] rounded-2xl border border-border/60 p-5 shadow-soft transition-shadow hover:shadow-lift">
+              <div className="stack-card rounded-2xl border border-border/60 bg-[var(--lavender-soft)] p-4 shadow-soft transition-shadow hover:shadow-lift sm:p-5">
                 <div>
                   <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-card/70 px-3 py-1 text-xs font-medium text-foreground/70">
                     <svg
@@ -101,17 +102,17 @@ export default function About() {
                     </svg>{" "}
                     Recently Living in
                   </div>
-                  <p className="font-display text-2xl font-semibold leading-tight">
+                  <p className="font-display text-xl font-semibold leading-snug text-balance sm:text-2xl sm:leading-tight">
                     Ahmedabad, Gujarat, India
                   </p>
                 </div>
               </div>
-              <div className="stack-card bg-card rounded-2xl border border-border/60 p-5 shadow-soft transition-shadow hover:shadow-lift">
+              <div className="stack-card rounded-2xl border border-border/60 bg-card p-4 shadow-soft transition-shadow hover:shadow-lift sm:p-5">
                 <div>
-                  <p className="mb-3 text-xs font-medium uppercase tracking-wider text-foreground/60">
+                  <p className="mb-3 text-[11px] font-medium tracking-wide text-foreground/60 uppercase sm:text-xs sm:tracking-wider">
                     Currently working with
                   </p>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-1.5 sm:gap-2">
                     <span className="rounded-full border border-border bg-[var(--sunshine-soft)] px-3 py-1 text-xs font-medium text-foreground/80">
                       TypeScript
                     </span>

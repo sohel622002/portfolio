@@ -11,20 +11,26 @@ export default function GsapTimelineProvider({
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const reduceMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+    const isNarrow = window.matchMedia("(max-width: 639px)").matches;
+    const slideX = reduceMotion ? 0 : isNarrow ? -20 : -50;
+    const headerY = reduceMotion ? 0 : isNarrow ? -40 : -80;
+
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({
         defaults: { ease: "power3.out", duration: 0.5 },
       });
 
-      // Target your classes cleanly from the scoped container
-      tl.from(".animate-header", { y: -80, opacity: 0 })
-        .from(".animate-chip", { x: -50, opacity: 0 }, "-=0.34")
-        .from(".animate-name", { x: -50, opacity: 0 }, "-=0.34")
-        .from(".animate-title", { x: -50, opacity: 0 }, "-=0.34")
-        .from(".animate-subtitle", { x: -50, opacity: 0 }, "-=0.34")
+      tl.from(".animate-header", { y: headerY, opacity: 0 })
+        .from(".animate-chip", { x: slideX, opacity: 0 }, "-=0.34")
+        .from(".animate-name", { x: slideX, opacity: 0 }, "-=0.34")
+        .from(".animate-title", { x: slideX, opacity: 0 }, "-=0.34")
+        .from(".animate-subtitle", { x: slideX, opacity: 0 }, "-=0.34")
         .from(
           ".animate-actions",
-          { x: -50, opacity: 0, stagger: 0.2 },
+          { x: slideX, opacity: 0, stagger: 0.2 },
           "-=0.34",
         );
     }, containerRef);

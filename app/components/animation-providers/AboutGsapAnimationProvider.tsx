@@ -16,10 +16,17 @@ export default function AboutGsapAnimationProvider({
 
   useGSAP(
     () => {
+      const reduceMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)",
+      ).matches;
+      const isNarrow = window.matchMedia("(max-width: 639px)").matches;
+      const slideY = reduceMotion ? 0 : isNarrow ? 20 : 35;
+      const slideX = reduceMotion ? 0 : isNarrow ? 12 : 30;
+
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: ".work-life-card",
-          start: "top center",
+          start: isNarrow ? "top 85%" : "top center",
           markers: false,
         },
       });
@@ -28,7 +35,7 @@ export default function AboutGsapAnimationProvider({
         ".work-life-card",
         {
           opacity: 0,
-          y: 35,
+          y: slideY,
         },
         {
           opacity: 1,
@@ -38,19 +45,18 @@ export default function AboutGsapAnimationProvider({
         },
       );
 
-      // Start card timeline at 50% of main animation
       tl.fromTo(
         ".stack-card",
         {
           opacity: 0,
-          x: 30,
+          x: slideX,
         },
         {
           opacity: 1,
           x: 0,
           duration: 0.7,
           ease: "power2.out",
-          stagger: 0.3,
+          stagger: isNarrow ? 0.15 : 0.3,
         },
         "-=0.4",
       );
